@@ -1,0 +1,260 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  
+}
+
+
+
+h1{
+  font-size: 45px;
+  line-height: 1;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+  color: white;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+
+nav{
+  background-color: #ddd;
+  padding: 20px 40px;    
+  text-align: left;   
+}
+
+header p{
+  color: white;
+  font-size: 20px;
+  padding: 0 30px 20px 50px;
+  text-align: left;
+}
+
+footer{
+    
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+
+nav a{
+  color: black;
+  font-weight: bold;
+  /* Requirement 1 code here*/
+  text-decoration: none;
+}
+ 
+/* Requirement 2 code here*/
+nav a:hover {
+  text-decoration: underline;
+  
+}
+  
+nav a:visited {
+    text-decoration: gold;
+
+
+
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  /* Requirement 3a code here*/
+  position: absolute;
+  top: -40px;
+
+}
+
+.skip a:focus{
+  /* Requirement 3b code here*/
+  top: 0;
+}
+
+
+/* Requirement 4 code here*/
+:focus{
+  border-color: black;
+  border-style: solid;
+
+}
+
+
+
+
+.container{
+  /* Requirement 5 code here*/
+  display:grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 15px;
+
+}
+
+
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: white;
+  height: 400px; /* Parallax effect */
+  /* YOUR CODE HERE; */
+  display: grid;
+  grid-column: 1 / -1; /* span row */
+  grid-row: 1 / span 1;
+  background-repeat: no-repeat;
+}
+
+
+
+#main{
+    position:static;
+    color: white;
+    height: 400px;
+}
+
+#main2{
+    height: 100px;
+}
+
+
+#movies{
+    display: grid;
+    grid-row: span;
+
+
+}
+
+#007{
+    height: 50px;
+
+
+}
+
+#bodytext{
+    color: gray;
+}
+
+#bodytext1{
+    color: gray;
+    display: grid;
+}
+
+.about{
+  display: grid;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+ 
+}
+
+.method-image{
+  display: grid;
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+  grid-row: 3 / span 1;
+ 
+}
+
+.method{
+  display: grid;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+ 
+  
+}
+
+/* You need to write some of your own selectors here */
+.clients-image{
+  display: grid;
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+  grid-row: 4 / span 1;
+ 
+
+
+}
+
+.clients{
+  display: grid;
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+ 
+
+}
+
+.contact-image{
+  display: grid;
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+  grid-row: 5 / span 1;
+ 
+
+
+}
+
+.scene{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+ 
+    
+
+  .scene > img{
+    border: none;
+    margin: 10px;
+    width: 400px;
+  }
+
+.more{
+  display: grid;
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+ 
+
+
+}
+
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+
+
+}
