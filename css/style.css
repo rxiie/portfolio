@@ -169,60 +169,8 @@ header{
 
 
 
-.about{
-  display: grid;
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
- 
-}
-
-.method-image{
-  display: grid;
-  grid-column: 1 / -1;
-  max-height: 700px;
-  overflow: hidden;
-  grid-row: 3 / span 1;
- 
-}
-
-.method{
-  display: grid;
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
- 
-  
-}
-
-/* You need to write some of your own selectors here */
-.clients-image{
-  display: grid;
-  grid-column: 1 / -1;
-  max-height: 700px;
-  overflow: hidden;
-  grid-row: 4 / span 1;
- 
 
 
-}
-
-.clients{
-  display: grid;
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
- 
-
-}
-
-.contact-image{
-  display: grid;
-  grid-column: 1 / -1;
-  max-height: 700px;
-  overflow: hidden;
-  grid-row: 5 / span 1;
- 
-
-
-}
 
 .scene{
     display: flex;
@@ -239,21 +187,3 @@ header{
     margin: 10px;
     width: 400px;
   }
-
-.more{
-  display: grid;
-  grid-column: 2 / span 1;
-  grid-row: 5 / span 1;
- 
-
-
-}
-
-
-.text-block{
-  background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
-  padding: 30px;
-
-
-}
