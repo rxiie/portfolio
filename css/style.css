@@ -25,7 +25,7 @@ h1{
 }
 
 h2{
-  font-size: 32px;
+  font-size: 22px;
   line-height: 1.5;
   color: white;
 }
@@ -65,7 +65,7 @@ footer{
 nav a{
   color: black;
   font-weight: bold;
-  /* Requirement 1 code here*/
+  
   text-decoration: none;
 }
  
@@ -152,11 +152,11 @@ header{
     display: grid;
     grid-row: span;
 
-
 }
 
-#007{
-    height: 50px;
+#main3{
+    height: 700px;
+    
 
 
 }
