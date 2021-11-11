@@ -84,19 +84,6 @@ nav a:visited {
 
 }
 
-.skip a{
-  background: white;
-  left: 0;
-  padding: 6px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
-
-  /* Requirement 3a code here*/
-  position: absolute;
-  top: -40px;
-
-}
 
 
 
