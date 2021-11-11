@@ -98,10 +98,6 @@ nav a:visited {
 
 }
 
-.skip a:focus{
-  /* Requirement 3b code here*/
-  top: 0;
-}
 
 
 /* Requirement 4 code here*/
