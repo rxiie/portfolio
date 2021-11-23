@@ -74,17 +74,19 @@ nav a{
 /* Requirement 2 code here*/
 nav a:hover {
   text-decoration: underline;
+  text-decoration-color: gold;
   
 }
   
-nav a:visited {
-    text-decoration: gold;
+
+
+.current{
+
+
 
 
 
 }
-
-
 
 
 /* Requirement 4 code here*/
@@ -113,7 +115,7 @@ header{
   background-size: cover; /* Parallax effect */
   color: white;
   height: 400px; /* Parallax effect */
-  /* YOUR CODE HERE; */
+  
   display: grid;
   grid-column: 1 / -1; /* span row */
   grid-row: 1 / span 1;
