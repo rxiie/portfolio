@@ -135,11 +135,16 @@ header{
     color: gray;
     text-align: center;
     
-    
-
 }
 
+#bodytext2{
+  display: block;
+    color: gray;
+    text-align: center;
+    text-decoration: underline;
 
+
+}
 
 
 .scene{
