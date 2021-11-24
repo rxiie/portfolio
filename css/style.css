@@ -88,35 +88,6 @@ nav a:hover {
 
 
 
-/* #image-grid{
-
-  --gap:16px;
-  --num-cols:3;
-  --row-height:500px;
-
-  box-sizing: border-box;
-  padding: var(--gap);
-
-  display: grid;
-  grid-auto-columns: minmax(20% 70%);
-  /* grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-rows: var(--row-height);
-  gap:var(--gap) */
-
-
-
-
-/* #image-grid > img{
-  display: block;
-
-  width: 500px;;
-  height: 100%;
-  
-
-} */ 
-
-
-
 
 .container{
   
@@ -125,19 +96,19 @@ nav a:hover {
   grid-template-rows: auto;
   grid-row-gap: 15px;
 
+
 }
 
 
 header{
   background-position: center; /* Parallax effect */
   color: white;
-  height: 400px; /* Parallax effect */
+  height: 750px; /* Parallax effect */
   
   display: grid;
   
- 
   grid-column: 1/ -1; 
-  grid-row: 1 / span 1;
+  grid-row: 1/ span 1;
   
 }
 
@@ -146,7 +117,7 @@ header{
 #main{
     position:static;
     color: white;
-    height: 400px;
+    height: 700px;
 }
 
 #main2{
@@ -177,6 +148,8 @@ header{
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    flex-direction: column;
+    margin: auto;
 
   }
  
@@ -187,6 +160,8 @@ header{
     border: none;
     margin: 10px;
     width:400px;
+   
+    
   }
 
 .scene > p{
@@ -231,4 +206,42 @@ header{
   position: absolute;
   top: -40px;
 
+}
+
+
+@media screen and (min-width: 900px){
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+  .nav{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+
+  }
+  .scene{
+    display: grid;
+    grid-column-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    margin: auto;
+    padding: 15px;
+    overflow: hidden;
+   
+  
+  }
+
+  #primary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex-direction: column;
+    margin: auto;
+
+  }
 }
