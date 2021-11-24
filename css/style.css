@@ -229,25 +229,42 @@ header{
   }
   .scene{
     display: grid;
-    grid-column-start: 1/ 3;
+    grid-column-start: 1/ -1;
     grid-column-gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 5fr;
    
     margin: auto;
     padding: 15px;
-    overflow: hidden;
+    overflow: scroll;
    
   
   }
 
-  #primary{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    flex-direction: column;
-    margin: auto;
+  
+.scene > p{
+  font-size: 20px;
+  width: 300px;
+
+
+
+}
+  .scene > img{
+
+    display: inline-block;
+    border: none;
+    margin: 10px;
+    width:600px;
 
   }
+
+  .scene > iframe{
+    width: 600px;
+    height: 400px;
+
+
+
+
+  }
+
+
 }
