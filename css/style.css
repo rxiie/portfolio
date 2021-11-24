@@ -104,7 +104,7 @@ nav a:hover {
   gap:var(--gap) */
 
 
-}
+
 
 /* #image-grid > img{
   display: block;
@@ -129,16 +129,16 @@ nav a:hover {
 
 
 header{
-  background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
-  background-size: cover; /* Parallax effect */
   color: white;
   height: 400px; /* Parallax effect */
   
   display: grid;
-  grid-column: 1 / -1; /* span row */
+  
+ 
+  grid-column: 1/ -1; 
   grid-row: 1 / span 1;
-  background-repeat: no-repeat;
+  
 }
 
 
@@ -154,32 +154,19 @@ header{
 }
 
 
-
-
 #main3{
     height: 700px;
     
 }
 
 #bodytext{
+  display: block;
     color: gray;
-}
-
-
-/* #finalpage{
-
-  display: grid;
-  /* grid-template-columns: 1fr; */
-  /* justify-content: center;
-  align-items: center; */
-  /* grid-template-columns: 1fr;
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
-
+    text-align: center;
+    
+    
 
 }
- */ 
-
 
 
 
@@ -189,16 +176,59 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 
   }
  
     
 
-  .scene > img{
+.scene > img{
+    display: block;
     border: none;
     margin: 10px;
     width:400px;
   }
 
+.scene > p{
+
+  font-family: sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+
+
+}
+  
+.scene > h2{
+
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+#para{
+  padding-bottom: 50px;
 
   
+
+}
+
+.container > h2{
+
+  display: grid;
+  justify-content: ;
+
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  /* Requirement 3a code here*/
+  position: absolute;
+  top: -40px;
+
+}
